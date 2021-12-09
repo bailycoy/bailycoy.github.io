@@ -1,50 +1,103 @@
 body {
-    background-color: rgb(216, 231, 231);
+    background-color: #707793;
 }
 
 header {
     border-bottom-style: double;
-    border-bottom-color: rgba(99, 89, 89, 0.459);
+    border-bottom-color: #2E3047;
     font-family:monospace;
     font-size: 20px;
 }
 
-h1 {
-    color: rgb(5, 124, 139);
-    text-align: center;
+footer {
+    border-top-style: double;
+    border-top-color: #2E3047;
+    font-family:monospace;
+    font-size: 20px;
 }
-h4 {
-    color:rgb(3, 162, 184);
+
+h6 {
+    font-family: monospace;
+    font-size: 14px;
+    color:#43455C;
+    text-align: left;
+}
+
+#list {
+    float: none;
+    display: block;
+    font-family: monospace;
+    list-style-type: square;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    background-color: #3C3F58;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: #3BBA9C;
     text-align: center;
+    padding: 14px 16px;
+    font-family: monospace;
+  }
+  
+  li a:hover {
+    background-color: #2E3047;
+  }
+
+h1 {
+    color: #3BBA9C;
+    text-align: center;
+    font-family: monospace;
+}
+
+h2 {
+    color: #3BBA9C;
+    text-align: center;
+    font-family: monospace;
 }
 
 p {
     font-family: monospace;
     font-size: 20px;
-    color:rgb(0, 69, 78);
+    color:#3BBA9C;
     text-align: center;
 }
 
+ol{
+    font-family: monospace;
+    font-size: 20px;
+    color:#3BBA9C;
+    text-align: center;  
+}
+
 div {
-    width: 700px;
-    padding: 10px;
-    border: 5px double rgba(99, 89, 89, 0.459);
     margin: auto;
     text-align: center;
     background-color: rgb(216, 231, 231);
     animation-name: example;
     animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 @keyframes example {
-    0%   {background-color: rgb(0, 255, 191);}
-    25%  {background-color: rgb(0, 225, 255);}
-    50%  {background-color: rgb(0, 204, 255);}
-    100% {background-color: rgb(216, 231, 231);}
+    0%   {background-color: #43455C;}
+    25%  {background-color: #3C3F58;}
+    50%  {background-color: #2E3047;}
+    100% {background-color: #43455C;}
   }
 
 img {
-    display: block;
+    display: table-column;
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
@@ -56,16 +109,35 @@ video {
     margin-right: auto;
 }
 
-footer {
-    border-top-style: double;
-    border-top-color: rgba(99, 89, 89, 0.459);
-    font-family:monospace;
-    font-size: 20px;
-}
 
 #container {
     border-top-style: double;
     border-top-color: rgba(99, 89, 89, 0.459);
     font-family:monospace;
     font-size: 20px;
+}
+
+box {
+    width: 700px;
+    padding: 10px;
+    border: 5px double rgba(99, 89, 89, 0.459);
+}
+
+
+button {
+    background-color: #2E3047;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    display: block;
+    margin: 0 auto;
+  }
+
+button a{
+    font-family: monospace;
+    font-size: 25px;
+    color: #3BBA9C
 }
